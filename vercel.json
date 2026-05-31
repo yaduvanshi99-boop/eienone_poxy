@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/callback/(.*)",
+      "dest": "/api/callback.js"
+    },
+    {
+      "src": "/api/pg/callback",
+      "dest": "/api/callback.js"
+    },
+    {
+      "src": "/api/webhooks/(.*)",
+      "dest": "/api/callback.js"
+    },
+    {
+      "src": "/api/service-callback/(.*)",
+      "dest": "/api/callback.js"
+    }
+  ]
+}
